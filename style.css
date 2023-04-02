@@ -1,0 +1,54 @@
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.chatbot {
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.chatbot .conversation {
+  border: 2px solid #eee;
+  display: block;
+  height: 300px;
+  padding: 20px;
+  overflow-y: scroll;
+  
+  /* Para que la conversación esté alienada abajo */
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.chatbot .conversation > ul > li {
+  display: block;
+  margin-top: 10px;
+}
+
+/* .chatbot .conversation > ul > li.self {
+  text-align: right;
+} */
+
+.chatbot .conversation > ul > li > .name {
+  color: #999;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.chatbot .conversation > ul > li > .message {
+  margin-top: 2px;
+}
+
+.chatbot form.query {
+  margin-top: 20px;
+}
+
+.chatbot form.query input {
+  border: 2px solid #eee;
+  width: 100%;
+  padding: 10px;
+}
