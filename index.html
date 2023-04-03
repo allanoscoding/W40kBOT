@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>W40kBOT</title>
+    <title>OmniBOT</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -12,8 +12,8 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">W40kBOT</a>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+        <a class="navbar-brand" href="#">OmniBOT</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,66 +34,68 @@
       </nav>
     </header>
     
-    <main>
-      <!-- Background image -->
-    <div class="bg-image text-center" style="background-image: url('static/W40k-bg3.jpg');height: 100vh;">
+    <body class="bg-image background">
+      <main>
         <!-- Sección chatbot -->
-        <section class="chatbot">
-            
-            <!-- Conversación -->
-            <div class="conversation text-white">
-            <ul></ul>
+          <section class="chatbot container mt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Conversación -->
+                    <div class="conversation border rounded p-3 mb-3 text-white">
+                        <ul class="list-unstyled"></ul>
+                    </div>
+                    <!-- Formulario para escribir la pregunta-->
+                    <form class="query">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-dark text-white" placeholder="Escriba aquí su pregunta...">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            
-            <!-- Formulario para escribir la pregunta-->
-            <form class="query">
-            <input class="text opacity-75" type="text" placeholder="Pregunte al emperador...">
-            </form>
-        
-        </section>
-        
-        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-        <script src="script.js"></script>
-        </body>
-    </div>
-    <!-- Background image -->
-    </main>
-    
-    <footer class="bg-dark text-center text-white">
-        <!-- Grid container -->
-        <div class="container p-4">
-          <!-- Section: Social media -->
-          <section class="mb-4">
-            <!-- Facebook -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                <i class="fab fa-facebook-f"></i
-            ></a>
-      
-            <!-- Twitter -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-              ><i class="fab fa-twitter"></i
-            ></a>
-      
-            <!-- Google -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-              ><i class="fab fa-google"></i
-            ></a>
-      
-            <!-- Instagram -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-              ><i class="fab fa-instagram"></i
-            ></a>
-      
-            <!-- Linkedin -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-      
-            <!-- Github -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-              ><i class="fab fa-github"></i
-            ></a>
           </section>
-          <!-- Section: Social media -->
-      
+      </main>
+    </body>
+ <footer class="bg-dark text-center fixed-bottom" style="margin-bottom:0" >
+    <!-- Grid containr er -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+            <i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+  </footer>
+ <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+ <script src="script.js"></script>
+ <script src="background.js"></script>
 </html>

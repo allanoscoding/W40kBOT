@@ -1,19 +1,11 @@
-
-* {
-  box-sizing: border-box;
-  font-family: sans-serif;
-  font-size: 16px;
-  margin: 0px;
-  padding: 0px;
-}
-
 .chatbot {
+  background-color: rgba(36, 35, 35, 0.9);
   margin: 20px auto;
   max-width: 500px;
 }
 
 .chatbot .conversation {
-  border: 2px solid #eee;
+  border: 2px solid #0069cc;
   display: block;
   height: 300px;
   padding: 20px;
@@ -34,7 +26,7 @@
 } */
 
 .chatbot .conversation > ul > li > .name {
-  color: #999;
+  color: #0069cc;
   font-weight: bold;
   font-size: 12px;
 }
@@ -48,7 +40,29 @@
 }
 
 .chatbot form.query input {
-  border: 2px solid #eee;
+  border: 2px solid #0069cc;
   width: 100%;
   padding: 10px;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transition: background-image 2s ease-in-out;
+}
+
+.background.bg1 {
+  background-image: url('static/W40k-bg2.jpg');
+}
+
+.background.bg2 {
+  background-image: url('static/W40k-bg3.jpg');
+}
+
+.background.bg3 {
+  background-image: url('static/W40k-bg4.jpg');
 }
