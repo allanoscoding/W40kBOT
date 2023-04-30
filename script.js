@@ -8,7 +8,7 @@ chatbots.each(function() {     // Para cada chatbot dentro de la página
   conv.append(  // Inicializamos la conversación
     '<li>' +
     '  <div class="name">Chatbot</div>' +
-    '  <div class="message">Hola, soy el chatbot de SM, ¿en qué te puedo ayudar?</div>' +
+    '  <div class="message">La sabiduría del Emperador es infinita...</div>' +
     '</li>'
   );
 
@@ -39,17 +39,3 @@ chatbots.each(function() {     // Para cada chatbot dentro de la página
   });
 
 });
-var backgrounds = ['bg1', 'bg2', 'bg3'];
-var current = 0;
-var time = 5000;
-
-function nextBackground() {
-    current++;
-    if (current > backgrounds.length - 1) {
-        current = 0;
-    }
-    document.querySelector('.background').className = 'background ' + backgrounds[current];
-    setTimeout(nextBackground, time);
-}
-
-setTimeout(nextBackground, time);
