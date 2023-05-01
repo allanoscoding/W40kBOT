@@ -1,6 +1,6 @@
 <?php
 $response_hola = "Hola! Si quieres preguntarme algo puedes empezar por algo como: Que fue la herejia de Horus? o Quien eres?";
-$response_quien_eres = 'Hola! Soy W40kBOT, quien responderá a tus preguntas sobre el Universo de Warhammer 40.000. Para empezar, podrias preguntar lo siguiente: Que fue la herejia de Horus?';
+$response_quien_eres = 'Hola! Soy W40kBOT, quien responderá a tus preguntas sobre el Universo de Warhammer 40.000. Para empezar, podrias preguntar lo siguiente: Que fue la herejia de Horus? Mi aspecto es el siguiente: <img src="static/adeptus.jpg">';
 $response_herejia = 'La Herejía de Horus fue un evento ficticio que se desarrolló en el universo de Warhammer 40,000, creado por Games Workshop. Es una historia épica que involucra a las fuerzas del Imperio humano, los Marines Espaciales, los Titanes y otras facciones en una guerra total que abarca toda la galaxia.
                         En la trama, Horus Lupercal, uno de los Primarcas leales al Emperador, se rebela contra su padre y se convierte en el líder de una insurrección que involucra a otros Primarcas y a sus legiones de Marines Espaciales. La guerra resultante se llama la Herejía de Horus, y su objetivo final es derrocar al Emperador y tomar el control del Imperio.
                         La Herejía de Horus es una historia larga y compleja que se desarrolla a lo largo de varios libros, juegos y otros medios. Es una de las historias más importantes e influyentes del universo de Warhammer 40,000, y ha tenido un impacto duradero en la mitología y el trasfondo del juego.';

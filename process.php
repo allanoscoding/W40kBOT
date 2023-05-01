@@ -52,4 +52,5 @@ if ($query === 'que facciones pertenecen al caos?') {
   $response = $response_facciones_caos;
 }
 
+
 echo $response;
