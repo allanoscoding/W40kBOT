@@ -7,7 +7,7 @@ chatbots.each(function() {     // Para cada chatbot dentro de la página
   
   conv.append(  // Inicializamos la conversación
     '<li>' +
-    '  <div class="name">Chatbot</div>' +
+    '  <div class="name" style="text-allign:right;">Chatbot</div>' +
     '  <div class="message">La sabiduría del Emperador es infinita...</div>' +
     '</li>'
   );

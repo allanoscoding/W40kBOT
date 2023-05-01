@@ -1,4 +1,7 @@
 <?php
+
+include 'responses.php';
+
 function normalize ($string) {
   $table = array(
       'Š'=>'S', 'š'=>'s', 'Đ'=>'Dj', 'đ'=>'dj', 'Ž'=>'Z', 'ž'=>'z', 'Č'=>'C', 'č'=>'c', 'Ć'=>'C', 'ć'=>'c',
@@ -13,19 +16,19 @@ function normalize ($string) {
   
   return strtr($string, $table);
 }
-$query = $_POST['query'];
-$query = strtolower(normalize($query));
-$response = 'No te he entendido';
 
-if ($query === 'hola') {
-  $response = 'Hola caracola';
-}
+$query = strtolower(normalize($_POST['query']));
 
-if ($query === 'que fue la herejia de horus?') {
-  $response = 'La Herejía de Horus fue un evento ficticio que se desarrolló en el universo de Warhammer 40,000, creado por Games Workshop. Es una historia épica que involucra a las fuerzas del Imperio humano, los Marines Espaciales, los Titanes y otras facciones en una guerra total que abarca toda la galaxia.
-  En la trama, Horus Lupercal, uno de los Primarcas leales al Emperador, se rebela contra su padre y se convierte en el líder de una insurrección que involucra a otros Primarcas y a sus legiones de Marines Espaciales. La guerra resultante se llama la Herejía de Horus, y su objetivo final es derrocar al Emperador y tomar el control del Imperio.
-  La Herejía de Horus es una historia larga y compleja que se desarrolla a lo largo de varios libros, juegos y otros medios. Es una de las historias más importantes e influyentes del universo de Warhammer 40,000, y ha tenido un impacto duradero en la mitología y el trasfondo del juego.'
-  ;
-}
+$response = match ($query) {
+  "hola" => $response_hola,
+  "quien eres?" => $response_quien_eres,
+  "que fue la herejia de horus?" => $response_herejia,
+  "quien es el emperador de la humanidad?" => $response_emperador,
+  "que facciones principales podemos encontrar en warhammer 40000?" => $response_facciones,
+  "que caracteristicas tiene el universo de warhammer 40000?" => $response_caracterisicas,
+  "que son los primarcas?" => $response_primarcas,
+  "que facciones pertenecen al caos?" => $response_facciones_caos,
+  default => $response_default,
+};
 
 echo $response;
