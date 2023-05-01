@@ -1,6 +1,6 @@
 <?php
 
-include 'responses.php';
+include ('responses.php');
 
 function normalize ($string) {
   $table = array(
@@ -18,17 +18,38 @@ function normalize ($string) {
 }
 
 $query = strtolower(normalize($_POST['query']));
+$response = "Perdona, no te he entendido. Puedes preguntarme cosas como Quien eres? o Que caracteristicas tiene el universo de warhammer 40000?. Si quieres mas informacion puedes encontrarla en el Codex";
 
-$response = match ($query) {
-  "hola" => $response_hola,
-  "quien eres?" => $response_quien_eres,
-  "que fue la herejia de horus?" => $response_herejia,
-  "quien es el emperador de la humanidad?" => $response_emperador,
-  "que facciones principales podemos encontrar en warhammer 40000?" => $response_facciones,
-  "que caracteristicas tiene el universo de warhammer 40000?" => $response_caracterisicas,
-  "que son los primarcas?" => $response_primarcas,
-  "que facciones pertenecen al caos?" => $response_facciones_caos,
-  default => $response_default,
-};
+if ($query === 'hola') {
+  $response = $response_hola;
+}
+
+if ($query === 'quien eres?') {
+  $response = $response_quien_eres;
+}
+
+if ($query === 'que fue la herejia de horus?') {
+  $response = $response_herejia;
+}
+
+if ($query === 'quien es el emperador de la humanidad?') {
+  $response = $response_emperador;
+}
+
+if ($query === 'que facciones principales podemos encontrar en warhammer 40000?') {
+  $response = $response_facciones;
+}
+
+if ($query === 'que caracteristicas tiene el universo de warhammer 40000?') {
+  $response = $response_universo;
+}
+
+if ($query === 'que son los primarcas?') {
+  $response = $response_primarcas;
+}
+
+if ($query === 'que facciones pertenecen al caos?') {
+  $response = $response_facciones_caos;
+}
 
 echo $response;
