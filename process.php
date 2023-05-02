@@ -18,7 +18,7 @@ function normalize ($string) {
 }
 
 $query = strtolower(normalize($_POST['query']));
-$response = "Perdona, no te he entendido. Puedes preguntarme cosas como Quien eres? o Que caracteristicas tiene el universo de warhammer 40000?. Si quieres mas informacion puedes encontrarla en el Codex";
+$response = "Perdona, no te he entendido. Puedes preguntarme cosas como Quien eres? o Que caracteristicas tiene el universo de warhammer 40000?. Si quieres mas informacion puedes encontrarla en la documentacion";
 
 if ($query === 'hola') {
   $response = $response_hola;
@@ -52,5 +52,28 @@ if ($query === 'que facciones pertenecen al caos?') {
   $response = $response_facciones_caos;
 }
 
+if ($query === 'que son los necrones?') {
+  $response = $response_necrones;
+}
+
+if ($query === 'que son los ctan?') {
+  $response = $response_ctan;
+}
+
+if ($query === 'que es la disformidad?') {
+  $response = $response_disformidad;
+}
+
+if ($query === 'que es el mechanicum?') {
+  $response = $response_mechanicum;
+}
+
+if ($query === 'que es el omnissiah?') {
+  $response = $response_omnissiah;
+}
+
+if ($query === 'donde puedo encontrar informacion introductoria al universo de warhammer 40000') {
+  $response = $response_informacion_universo;
+}
 
 echo $response;
