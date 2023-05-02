@@ -91,7 +91,12 @@ Además, el Omnissiah también se considera una figura importante en la teologí
 
 En resumen, el Omnissiah es una deidad mecánica adorada por el Mechanicum en el universo de Warhammer 40,000, que representa el conocimiento y la tecnología avanzada.";
 
-$response_informacion_universo = "Un buen punto de inicio es el siguiente video: <iframe width='420' height='315'
+$response_informacion_universo = "Un buen punto de inicio son los siguientes videos: 
+<iframe width='420' height='315'
 src='https://www.youtube.com/embed/9n5jgq2XvA8'>
-</iframe>";
+</iframe>
+<iframe width='420' height='315'
+src='https://www.youtube.com/embed/vN_jkrpGpTw'>
+</iframe>"
+;
 ?>
