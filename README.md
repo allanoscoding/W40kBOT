@@ -27,7 +27,7 @@ sustituimos todos aquellos caracteres con acento o tilde y los intercambiamos po
 
 Algunas de las preguntas incluyen una imagen o un video en la respuesta, estas son las siguientes:
 
-        - Quien eres?
-        - Que son los Primarcas?
-        - Que facciones pertenecen al Caos?
-        - Que son los Ctan?
+    - Quien eres?
+    - Que son los Primarcas?
+    - Que facciones pertenecen al Caos?
+    - Que son los Ctan?
