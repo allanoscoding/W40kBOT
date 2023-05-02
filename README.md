@@ -31,3 +31,15 @@ Algunas de las preguntas incluyen una imagen o un video en la respuesta, estas s
     - Que son los Primarcas?
     - Que facciones pertenecen al Caos?
     - Que son los Ctan?
+
+Las respuestas son fijas asi como las preguntas, por lo que tenemos un archivo que almacena las respuestas para despues procesarlas en el archivo process.php
+
+Tambien se ha creado un script en JS para crear una rotacion de fondos y dar vida al bot
+
+Los objetivos que se han cumplido acorde a los definidos en Moodle son:
+
+    - Reconocer preguntas en minúsculas / minúsculas
+    - Reconocer preguntas con tildes
+    - Respuestas con imágenes y vídeos
+    - Animaciones
+    
