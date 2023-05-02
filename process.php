@@ -72,7 +72,7 @@ if ($query === 'que es el omnissiah?') {
   $response = $response_omnissiah;
 }
 
-if ($query === 'donde puedo encontrar informacion introductoria al universo de warhammer 40000') {
+if ($query === 'donde puedo encontrar informacion introductoria al universo de warhammer 40000?') {
   $response = $response_informacion_universo;
 }
 

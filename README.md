@@ -20,8 +20,13 @@ Las preguntas o prompts que acepta el bot son las siguientes:
     - Que es la Disformidad?
     - Que es el Mechanicum?
     - Que es el Omnissiah?
+    - Donde puedo encontrar informacion introductoria al universo de Warhammer 40000?
 
 La estrategia empleada para que el bot acepte input independientemente de las mayusculas o minusculas asi como de los acentos o tildes es simple, primero
 sustituimos todos aquellos caracteres con acento o tilde y los intercambiamos por su equivalente con la funcion strtr() integrada en php. Y por ultimo convertir el string resultante en minusculas para su posterior evaluacion. Es decir, reducimos a cadena a un caso base donde todas las letras son minusculas y sin acento, normalizando el tipo de cadena a evaluar en el process.php .
 
-ALgunas de las preguntas
+Algunas de las preguntas incluyen una imagen o un video en la respuesta, estas son las siguientes:
+        - Quien eres?
+        - Que son los Primarcas?
+        - Que facciones pertenecen al Caos?
+        - Que son los Ctan?
